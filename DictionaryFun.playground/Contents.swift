@@ -124,14 +124,21 @@ for (stateKey, capital) in statesAndCapitals {
  Since there are multiple members for each band, the value of each key should be an `Array`.
  */
 // write your code here
-
+var bands = [
+    
+    "Nirvana" : ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"],
+    "The Beatles" : ["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"],
+    "The Breeders" : ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"],
+    "Pixies" : ["Frank Black", "Joey Santiago", "Kim Deal", "David Lovering"],
+    
+]
 
 
 
 /*: question12
  ### 12. What is the type of the dictionary you created in Question 11?
  */
-
+//the bands dictionary is of type [String : [String]]
 
 
 
@@ -140,7 +147,12 @@ for (stateKey, capital) in statesAndCapitals {
  */
 let bandName = "Pixies"
 // write your code here
-
+for (bandKey, members) in bands {
+    if bandKey == bandName {
+        print(members)
+        // when bands[bandName] is used in the print statement instead of members, it prints out an optional!
+    }
+}
 
 
 
