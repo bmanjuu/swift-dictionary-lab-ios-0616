@@ -111,6 +111,16 @@ for (stateKey, capital) in statesAndCapitals {
     }
 }
 
+//ALTERNATIVE: obtained from solution: 
+//let state = "New York"
+//let theCapital = stateCapitals[state]
+//if let capital = theCapital {
+//    print("The capital of \(state) is \(capital)")
+//} else {
+//    print("I don't know \(state)'s capital")
+//}
+
+//with this solution, you're setting variables to the values that you want and unwrapping the optional, which is the value of the "New York" key in the dictionary. this is a String? because you can't guarantee that such a key or a value or a key currently exists within the dictionary.
 
 
 /*: question11
@@ -154,7 +164,7 @@ for (bandKey, members) in bands {
     }
 }
 
-
+//FOR ALTERNATIVE, REFER TO THE ALTERNATIVE SOLUTION FOR Q10 AND HOW IT WAS SOLVED 
 
 /*:
  [Solution](solution)
